@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Block Jump</title>
+
+    <link rel="stylesheet" type="text/css" href="../common/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="../lib/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="../lib/dat.gui.min.js"></script>
+
+    <script type="module" src="game.js"></script>
+</head>
+<body>
+    <div class="fullscreen">
+        <canvas></canvas>
+    </div>
+    <h2 id="instructions">Use WASD keys to move <br> Use SPACE to jump</h2>
+    <h2 id="mute">Press 'M' to play/pause the music</h2>
+    <h2 id="green_counter"></h2>
+    <h2 id="gold_counter"></h2>
+    <div id="counter">
+        <label id="minutes">00</label><label id="crta">:</label><label id="seconds">00</label>
+    </div>
+    <h1 id="level"></h1>
+    <div id="end_level">
+        <h1 id="level_complete">LEVEL COMPLETED</h1>
+        <h2 id="green_complete">Green blocks collected:</h2>
+        <h2 id="green_number"></h2>
+        <h2 id="time_complete">Time:</h2>
+        <h2 id="time_number"></h2>
+        <h2 id="points_complete">Points:</h2>
+        <h2 id="points_number"></h2>
+        <h1 id="button">CLICK TO START!</h1>
+    </div>
+    <h1 id="click_start">CLICK TO START!</h1>
+    <div id="load">
+        <h1 id="title">BLOCK JUMP</h1>
+        <h3 id="description">Reach the golden platform by collecting green and gold blocks, but remember, dont fall!</h3>
+        <h1 id="start_game"></h1>
+    </div>
+    <div id="game_over">
+        <h1 id="congrats">CONGRATULATIONS!</h1>
+        <h3 id="total"></h3>
+    </div>
+
+</body>
+</html>

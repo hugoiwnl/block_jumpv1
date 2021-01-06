@@ -1,0 +1,60 @@
+{
+    "nodes": [
+      {
+        "type": "camera",
+        "translation": [0, 5, -4],
+        "rotation": [0 , 0, 0],
+        "aabb": {
+          "min": [-0.2, -0.2, -0.2],
+          "max": [0.2, 0.2, 0.2]
+        },
+        "aspect": 1,
+        "fov": 1.5,
+        "near": 0.01,
+        "far": 100
+      },
+      
+      {
+        "type": "model",
+        "mesh": 1,
+        "texture": 0,
+        "aabb": {
+          "min": [-0.5, -0.5, -0.5],
+          "max": [0.5, 0.5, 0.5]
+        },
+        "translation": [2, 0, 0],
+        "scale": [40, 0, 30]
+      },
+      {
+        "type": "model",
+        "mesh": 0,
+        "texture": 4,
+        
+        "translation": [0, 3.6, -25],
+        "scale": [40, 30, 50]
+      }
+      
+     
+      
+      
+      
+    ],
+    "textures": [
+      "../common/images/lava.jpg",
+      "../common/images/tiles1.webp",
+      "../common/images/gold.jpg",
+      "../common/images/wood.webp",
+      "../common/images/sky1.jpg",
+      "../common/images/green1.jpg",
+      "../common/images/stone.webp"
+  
+    ],
+    "meshes": [
+      "../common/models/cube.json",
+      "../common/models/floor.json",
+      "../common/models/cube1.json"
+  
+  
+    ]
+  }
+  
