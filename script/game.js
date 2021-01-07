@@ -730,7 +730,7 @@ class App extends Application {
                 }
             }
             if(scena==0){
-                if(this.movecam<-9.9){
+                if(this.movecam<-12.5){
                     this.load("scene.json");
                 }
                 this.level_not_end();
@@ -878,7 +878,7 @@ class App extends Application {
 
     clock1(){
         var start=document.getElementById("start_game");
-        var totalSeconds=10;
+        var totalSeconds=15;
 
         setInterval(setTime,1000);
 
@@ -921,8 +921,16 @@ class App extends Application {
         title.style.display="block";
         let description=document.getElementById("description");
         description.style.display="block";
+        let description1=document.getElementById("description1");
+        description1.style.display="block";
+        let slika1=document.getElementById("platform_img");
+        slika1.style.display="block";
         let start=document.getElementById("start_game");
         start.style.display="block";
+        let slika2=document.getElementById("goldb_img");
+        slika2.style.display="block";
+        let slika3=document.getElementById("greenb_img");
+        slika3.style.display="block";
     }
     no_title(){
         let title=document.getElementById("title");
@@ -931,6 +939,14 @@ class App extends Application {
         description.style.display="none";
         let start=document.getElementById("start_game");
         start.style.display="none";
+        let slika1=document.getElementById("platform_img");
+        slika1.style.display="none";
+        let description1=document.getElementById("description1");
+        description1.style.display="none";
+        let slika2=document.getElementById("goldb_img");
+        slika2.style.display="none";
+        let slika3=document.getElementById("greenb_img");
+        slika3.style.display="none";
     }
     game_over(){
         let over=document.getElementById("game_over");

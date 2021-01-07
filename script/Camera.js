@@ -61,47 +61,30 @@ export default class Camera extends Node {
                 let framenow=c.translation[1];
                 frames.push(framenow);
             }
-            /*
             if(!jump_end){
                 if(!pritisnut){
-                    last_frame=c.translation[1];
+                    this.last_frame=c.translation[1];
                     pritisnut=true;
-                    c.translation[1]+=0.1;
-                }else{
-                    if(c.translation[1]>last_frame+0.8){
-                        jump_end=true;
-                    }else{
-                        c.translation[1]+=0.1;
-                    }
-                }
-            }else{
-                if(frames[frames.length-1].toFixed(2)==frames[frames.length-2].toFixed(2)){
-                    jump_end=false;
-                    pritisnut=false;
-                    last_frame=null;
-                }
-                
-            }*/
-            
-        }
-        if(!jump_end){
-            if(!pritisnut){
-                last_frame=c.translation[1];
-                pritisnut=true;
-                this.gravity=0.08;
-            }else{
-                if(c.translation[1]>last_frame+0.9){
-                    jump_end=true;
-                    this.gravity=-0.04;
+                    this.gravity=0.08;
                 }
             }
-        }else{
-            if(frames[frames.length-1].toFixed(2)==frames[frames.length-2].toFixed(2)  && frames[frames.length-2].toFixed(2)==frames[frames.length-3].toFixed(2)){
+        }
+        if(pritisnut){
+            if(c.translation[1]>this.last_frame+0.9){
+                jump_end=true;
+                this.gravity=-0.04;
+            }
+        }
+        if(jump_end){
+            if(frames[frames.length-1].toFixed(2)==frames[frames.length-2].toFixed(2)){
                 jump_end=false;
                 pritisnut=false;
-                last_frame=null;
+                this.last_frame=null;
             }
         }
+        console.log(this.last_frame);
+        
+        
 
         // 2: update velocity
         vec3.scaleAndAdd(c.velocity, c.velocity, acc, dt * c.acceleration);

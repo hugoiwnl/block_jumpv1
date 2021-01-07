@@ -194,9 +194,9 @@ a.back:hover {
 
 #title{
     position: absolute;
-    top: 5%;
+    top: 0%;
     right: 18%;
-    font-size: 9vw;
+    font-size: 8.5vw;
     font-family: 'Goldman', cursive;
     font-family: 'Permanent Marker', cursive;
     -webkit-text-stroke: 1px red;
@@ -205,7 +205,7 @@ a.back:hover {
 }
 #description{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 25%;
     font-size: 1.5vw;
     font-family: 'Oswald', sans-serif;
@@ -213,7 +213,7 @@ a.back:hover {
 }
 #start_game{
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 32%;
     font-size: 3vw;
     font-family: 'Goldman', cursive;
@@ -269,4 +269,37 @@ a.back:hover {
     font-size: 1.5vw;
     color:white;
     font-family: 'Oswald', sans-serif;
+}
+#platform_img{
+    border: 1px solid white;
+    position: absolute;
+    top: 38%;
+    right: 30%;
+    width: 10vw;
+    display:none;
+}
+#description1{
+    position: absolute;
+    top: 60%;
+    left: 8.1%;
+    font-size: 1.5vw;
+    font-family: 'Oswald', sans-serif;
+    color: cyan;
+}
+#goldb_img{
+    border: 1px solid white;
+    position: absolute;
+    top: 55%;
+    right: 30%;
+    width: 10vw;
+    display: none;
+}
+#greenb_img{
+    border: 1px solid white;
+    position: absolute;
+    top: 55%;
+    right: 18%;
+    width: 10vw;
+    height: 8.1vw;
+    
 }
